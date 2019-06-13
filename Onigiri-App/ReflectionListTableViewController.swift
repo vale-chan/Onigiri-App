@@ -7,15 +7,8 @@
 //
 
 import UIKit
-import CoreData
 
 class ReflectionListTableViewController: UITableViewController {
-    
-    var reflections = [Reflection]()
-    var managedObjectContext: NSManagedObjectContext? {
-        return(UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,16 +10,21 @@ import UIKit
 
 class ReflectionListTableViewController: UITableViewController {
     
-    @IBAction func unwindToReflectionList(segue: UIStoryboardSegue){
-        guard segue.identifier == "saveUnwind" else {return}
-        let sourceViewController = segue.source as! ReflectionListTableViewController
+    @IBAction func unwindReflectionToList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveUnwind" else { return }
+        let sourceViewController = segue.source as! ReflectionViewController
         
-        if let reflection = sourceViewController.reflections {
-            let newIndexPath = IndexPath(row: reflections.count, section: 0)
-            
-            reflections.append(reflection)
-            tabelView.insertRows(at: [newIndexPath], with: .automatic)
+        if let reflection = sourceViewController.reflection {
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                reflections[selectedIndexPath.row] = reflection
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: reflections.count, section: 0)
+                reflections.append(reflection)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
+        Reflection.saveReflections(reflections)
     }
     
     
@@ -27,12 +32,10 @@ class ReflectionListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        if let savedReflections = Reflection.loadReflections() {
+            reflections = savedReflections
+        } else {return}
     }
 
     // MARK: - Table view data source

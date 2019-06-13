@@ -18,7 +18,6 @@
 		02FAA00222B2800300007FA1 /* QuestionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00122B2800300007FA1 /* QuestionOneViewController.swift */; };
 		02FAA00422B2850100007FA1 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */; };
 		02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00522B29DC200007FA1 /* InfoViewController.swift */; };
-		02FAA00822B2A00100007FA1 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00722B2A00100007FA1 /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		02FAA00122B2800300007FA1 /* QuestionOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOneViewController.swift; sourceTree = "<group>"; };
 		02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
 		02FAA00522B29DC200007FA1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		02FAA00722B2A00100007FA1 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				0256506122B0EB4800D4AD65 /* Assets.xcassets */,
 				0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */,
 				0256506622B0EB4800D4AD65 /* Info.plist */,
-				02FAA00722B2A00100007FA1 /* ListTableViewController.swift */,
 				02FAA00522B29DC200007FA1 /* InfoViewController.swift */,
 				02FAA00122B2800300007FA1 /* QuestionOneViewController.swift */,
 				02FA9FFF22B27DC700007FA1 /* QuestionTwoViewController.swift */,
@@ -162,7 +159,6 @@
 				02FA9FFC22B2714A00007FA1 /* ReflectionViewController.swift in Sources */,
 				02FAA00222B2800300007FA1 /* QuestionOneViewController.swift in Sources */,
 				02FA9FFE22B274C600007FA1 /* QuestionThreeViewController.swift in Sources */,
-				02FAA00822B2A00100007FA1 /* ListTableViewController.swift in Sources */,
 				02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */,
 				02FAA00022B27DC700007FA1 /* QuestionTwoViewController.swift in Sources */,
 			);

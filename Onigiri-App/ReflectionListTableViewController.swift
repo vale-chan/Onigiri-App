@@ -10,8 +10,6 @@ import UIKit
 
 class ReflectionListTableViewController: UITableViewController {
     
-    @IBOutlet weak var textLabel: UILabel!
-    
     
     var reflections = [Reflection]()
     

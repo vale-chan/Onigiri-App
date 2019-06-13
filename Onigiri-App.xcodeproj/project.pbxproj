@@ -19,6 +19,7 @@
 		02FAA00422B2850100007FA1 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */; };
 		02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00522B29DC200007FA1 /* InfoViewController.swift */; };
 		02FAA00D22B2BE7300007FA1 /* Reflection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00B22B2BE7300007FA1 /* Reflection.xcdatamodeld */; };
+		02FAA03022B2C2AA00007FA1 /* ReflectionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA02F22B2C2AA00007FA1 /* ReflectionListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
 		02FAA00522B29DC200007FA1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		02FAA00C22B2BE7300007FA1 /* Reflection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reflection.xcdatamodel; sourceTree = "<group>"; };
+		02FAA02F22B2C2AA00007FA1 /* ReflectionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +72,12 @@
 			children = (
 				0256505A22B0EB4700D4AD65 /* AppDelegate.swift */,
 				0256505C22B0EB4700D4AD65 /* ViewController.swift */,
+				02FAA00B22B2BE7300007FA1 /* Reflection.xcdatamodeld */,
 				0256505E22B0EB4700D4AD65 /* Main.storyboard */,
 				0256506122B0EB4800D4AD65 /* Assets.xcassets */,
 				0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */,
-				02FAA00B22B2BE7300007FA1 /* Reflection.xcdatamodeld */,
 				0256506622B0EB4800D4AD65 /* Info.plist */,
+				02FAA02F22B2C2AA00007FA1 /* ReflectionListTableViewController.swift */,
 				02FAA00522B29DC200007FA1 /* InfoViewController.swift */,
 				02FAA00122B2800300007FA1 /* QuestionOneViewController.swift */,
 				02FA9FFF22B27DC700007FA1 /* QuestionTwoViewController.swift */,
@@ -160,6 +163,7 @@
 				0256505D22B0EB4700D4AD65 /* ViewController.swift in Sources */,
 				0256505B22B0EB4700D4AD65 /* AppDelegate.swift in Sources */,
 				02FA9FFC22B2714A00007FA1 /* ReflectionViewController.swift in Sources */,
+				02FAA03022B2C2AA00007FA1 /* ReflectionListTableViewController.swift in Sources */,
 				02FAA00222B2800300007FA1 /* QuestionOneViewController.swift in Sources */,
 				02FAA00D22B2BE7300007FA1 /* Reflection.xcdatamodeld in Sources */,
 				02FA9FFE22B274C600007FA1 /* QuestionThreeViewController.swift in Sources */,

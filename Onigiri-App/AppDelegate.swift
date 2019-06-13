@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,16 +45,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+var window: UIWindow?
 // MARK: - Core Data stack
 
-lazy var persistentContainer: NSPersistentContainer = {
+var persistentContainer: NSPersistentContainer = {
+    
+    let container = NSPersistentContainer(name: "Reflection")
+    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+        if let error = error {
+            
+            fatalError("Unresolved error, \((error as NSError).userInfo)")
+        }
+    })
+    return container
+}()
+
+
+/*
+var persistentContainer: NSPersistentContainer = {
     /*
      The persistent container for the application. This implementation
      creates and returns a container, having loaded the store for the
      application to it. This property is optional since there are legitimate
      error conditions that could cause the creation of the store to fail.
      */
-    let container = NSPersistentContainer(name: "coreData")
+    let container = NSPersistentContainer(name: "Reflection")
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
         if let error = error as NSError? {
             // Replace this implementation with code to handle the error appropriately.
@@ -88,6 +105,6 @@ func saveContext () {
         }
     }
 }
+ */
 
-}
 

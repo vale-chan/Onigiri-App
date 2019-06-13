@@ -10,6 +10,18 @@ import UIKit
 
 class ReflectionListTableViewController: UITableViewController {
     
+    @IBAction func unwindToReflectionList(segue: UIStoryboardSegue){
+        guard segue.identifier == "saveUnwind" else {return}
+        let sourceViewController = segue.source as! ReflectionListTableViewController
+        
+        if let reflection = sourceViewController.reflections {
+            let newIndexPath = IndexPath(row: reflections.count, section: 0)
+            
+            reflections.append(reflection)
+            tabelView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
     
     var reflections = [Reflection]()
     

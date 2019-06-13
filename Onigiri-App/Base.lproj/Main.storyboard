@@ -125,12 +125,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="SLw-e0-fYf" firstAttribute="top" secondItem="diB-ug-gif" secondAttribute="bottom" constant="20" id="2Hh-G7-smk"/>
+                            <constraint firstItem="8Zg-v2-6rX" firstAttribute="bottom" secondItem="SLw-e0-fYf" secondAttribute="bottom" constant="20" id="2Uf-6f-v3W"/>
                             <constraint firstItem="diB-ug-gif" firstAttribute="leading" secondItem="8Zg-v2-6rX" secondAttribute="leading" id="4jz-jI-WlJ"/>
+                            <constraint firstItem="SLw-e0-fYf" firstAttribute="leading" secondItem="8Zg-v2-6rX" secondAttribute="leading" constant="20" id="798-Hb-XSw"/>
                             <constraint firstItem="diB-ug-gif" firstAttribute="trailing" secondItem="8Zg-v2-6rX" secondAttribute="trailing" id="Jgg-aS-XBg"/>
-                            <constraint firstItem="SLw-e0-fYf" firstAttribute="leading" secondItem="8Zg-v2-6rX" secondAttribute="leading" constant="20" id="Wl6-9V-TNa"/>
-                            <constraint firstItem="SLw-e0-fYf" firstAttribute="top" secondItem="diB-ug-gif" secondAttribute="bottom" constant="20" id="h4F-xU-dwe"/>
-                            <constraint firstItem="8Zg-v2-6rX" firstAttribute="bottom" secondItem="SLw-e0-fYf" secondAttribute="bottom" constant="20" id="mTH-kn-nPf"/>
-                            <constraint firstItem="8Zg-v2-6rX" firstAttribute="trailing" secondItem="SLw-e0-fYf" secondAttribute="trailing" constant="20" id="t4n-lA-NjK"/>
+                            <constraint firstItem="SLw-e0-fYf" firstAttribute="centerX" secondItem="Kdt-0L-R7u" secondAttribute="centerX" id="VmB-mc-n2o"/>
+                            <constraint firstItem="8Zg-v2-6rX" firstAttribute="trailing" secondItem="SLw-e0-fYf" secondAttribute="trailing" constant="20" id="aPS-SL-m4g"/>
                             <constraint firstItem="diB-ug-gif" firstAttribute="top" secondItem="8Zg-v2-6rX" secondAttribute="top" id="y1S-xA-HQ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Zg-v2-6rX"/>
@@ -212,7 +213,7 @@
             </objects>
             <point key="canvasLocation" x="1025" y="894"/>
         </scene>
-        <!--View Controller-->
+        <!--Reflexionen-->
         <scene sceneID="U3Y-lf-KAc">
             <objects>
                 <viewController id="spZ-lf-qXp" sceneMemberID="viewController">
@@ -287,7 +288,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zgZ-wk-ntp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="list" id="jvZ-pq-ciG"/>
+                    <tabBarItem key="tabBarItem" title="Reflexionen" image="list" selectedImage="list" id="jvZ-pq-ciG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8X-ff-bTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -457,7 +458,7 @@
             </objects>
             <point key="canvasLocation" x="-1591" y="-465"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Infos-->
         <scene sceneID="4sL-gr-sea">
             <objects>
                 <viewController id="4KW-kz-fG1" customClass="InfoViewController" customModule="Onigiri_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -492,7 +493,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DDe-0k-Qps"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="info" id="S48-Ns-k3u"/>
+                    <tabBarItem key="tabBarItem" title="Infos" image="info" selectedImage="info" id="S48-Ns-k3u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aav-uF-KYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

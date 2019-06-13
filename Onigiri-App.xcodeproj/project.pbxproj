@@ -19,6 +19,7 @@
 		02FAA00422B2850100007FA1 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */; };
 		02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA00522B29DC200007FA1 /* InfoViewController.swift */; };
 		02FAA03022B2C2AA00007FA1 /* ReflectionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA02F22B2C2AA00007FA1 /* ReflectionListTableViewController.swift */; };
+		02FAA03222B2CB8000007FA1 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FAA03122B2CB8000007FA1 /* Reflection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		02FAA00322B2850100007FA1 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
 		02FAA00522B29DC200007FA1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		02FAA02F22B2C2AA00007FA1 /* ReflectionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionListTableViewController.swift; sourceTree = "<group>"; };
+		02FAA03122B2CB8000007FA1 /* Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				0256505A22B0EB4700D4AD65 /* AppDelegate.swift */,
+				02FAA03122B2CB8000007FA1 /* Reflection.swift */,
 				0256505C22B0EB4700D4AD65 /* ViewController.swift */,
 				0256505E22B0EB4700D4AD65 /* Main.storyboard */,
 				0256506122B0EB4800D4AD65 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				02FAA00222B2800300007FA1 /* QuestionOneViewController.swift in Sources */,
 				02FA9FFE22B274C600007FA1 /* QuestionThreeViewController.swift in Sources */,
 				02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */,
+				02FAA03222B2CB8000007FA1 /* Reflection.swift in Sources */,
 				02FAA00022B27DC700007FA1 /* QuestionTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

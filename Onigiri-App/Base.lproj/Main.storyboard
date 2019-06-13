@@ -216,7 +216,7 @@
         <!--Reflexionen-->
         <scene sceneID="U3Y-lf-KAc">
             <objects>
-                <viewController id="spZ-lf-qXp" sceneMemberID="viewController">
+                <viewController id="spZ-lf-qXp" customClass="ReflectionListTableViewController" customModule="Onigiri_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CkZ-kS-lhC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,6 +289,9 @@
                         <viewLayoutGuide key="safeArea" id="zgZ-wk-ntp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reflexionen" image="list" selectedImage="list" id="jvZ-pq-ciG"/>
+                    <connections>
+                        <outlet property="textLabel" destination="yJV-3l-exP" id="VRT-6p-iSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8X-ff-bTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

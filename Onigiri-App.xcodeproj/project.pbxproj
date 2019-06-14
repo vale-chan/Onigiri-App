@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0243364422B3B2D8000AC1D1 /* Onigiri-App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0243364222B3B2D8000AC1D1 /* Onigiri-App.xcdatamodeld */; };
+		0243366722B3C2C0000AC1D1 /* ReflectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243366622B3C2C0000AC1D1 /* ReflectionTableViewCell.swift */; };
 		0256505B22B0EB4700D4AD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256505A22B0EB4700D4AD65 /* AppDelegate.swift */; };
-		0256505D22B0EB4700D4AD65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256505C22B0EB4700D4AD65 /* ViewController.swift */; };
 		0256506022B0EB4700D4AD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256505E22B0EB4700D4AD65 /* Main.storyboard */; };
 		0256506222B0EB4800D4AD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256506122B0EB4800D4AD65 /* Assets.xcassets */; };
 		0256506522B0EB4800D4AD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */; };
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		0243364322B3B2D8000AC1D1 /* Onigiri-App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Onigiri-App.xcdatamodel"; sourceTree = "<group>"; };
+		0243366622B3C2C0000AC1D1 /* ReflectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewCell.swift; sourceTree = "<group>"; };
 		0256505722B0EB4700D4AD65 /* Onigiri-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onigiri-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256505A22B0EB4700D4AD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0256505C22B0EB4700D4AD65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0256505F22B0EB4700D4AD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0256506122B0EB4800D4AD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0256506422B0EB4800D4AD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			children = (
 				0256505A22B0EB4700D4AD65 /* AppDelegate.swift */,
 				0243364222B3B2D8000AC1D1 /* Onigiri-App.xcdatamodeld */,
-				0256505C22B0EB4700D4AD65 /* ViewController.swift */,
+				0243366622B3C2C0000AC1D1 /* ReflectionTableViewCell.swift */,
 				0256505E22B0EB4700D4AD65 /* Main.storyboard */,
 				0256506122B0EB4800D4AD65 /* Assets.xcassets */,
 				0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */,
@@ -160,12 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02FAA00422B2850100007FA1 /* QuestionFourViewController.swift in Sources */,
-				0256505D22B0EB4700D4AD65 /* ViewController.swift in Sources */,
 				0256505B22B0EB4700D4AD65 /* AppDelegate.swift in Sources */,
 				02FA9FFC22B2714A00007FA1 /* ReflectionViewController.swift in Sources */,
 				02FAA03022B2C2AA00007FA1 /* ReflectionListTableViewController.swift in Sources */,
 				02FAA00222B2800300007FA1 /* QuestionOneViewController.swift in Sources */,
 				02FA9FFE22B274C600007FA1 /* QuestionThreeViewController.swift in Sources */,
+				0243366722B3C2C0000AC1D1 /* ReflectionTableViewCell.swift in Sources */,
 				0243364422B3B2D8000AC1D1 /* Onigiri-App.xcdatamodeld in Sources */,
 				02FAA00622B29DC200007FA1 /* InfoViewController.swift in Sources */,
 				02FAA00022B27DC700007FA1 /* QuestionTwoViewController.swift in Sources */,

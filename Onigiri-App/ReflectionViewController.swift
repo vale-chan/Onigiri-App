@@ -11,7 +11,7 @@ import CoreData
 
 class ReflectionViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var question1Label: UITextField!
+    @IBOutlet weak var question1Label: UILabel!
     @IBOutlet weak var question2Label: UILabel!
     @IBOutlet weak var question3Label: UILabel!
     @IBOutlet weak var question4Label: UILabel!
@@ -37,11 +37,6 @@ class ReflectionViewController: UIViewController, UINavigationControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        question1Label.text = answer1
-        question2Label.text = answer2
-        question3Label.text = answer3
-        question4Label.text = answer4
-        
         
         // Load data
         if let reflection = reflection {
@@ -49,6 +44,11 @@ class ReflectionViewController: UIViewController, UINavigationControllerDelegate
             question2Label.text = reflection.answer2
             question3Label.text = reflection.answer3
             question4Label.text = reflection.answer4
+        } else {
+            question1Label.text = answer1
+            question2Label.text = answer2
+            question3Label.text = answer3
+            question4Label.text = answer4
         }
         
         if question1Label.text != "" {
@@ -57,7 +57,7 @@ class ReflectionViewController: UIViewController, UINavigationControllerDelegate
         
         // Delegates
         
-        question1Label.delegate = self
+        //question1Label.delegate = self
         
     }
     
@@ -81,6 +81,76 @@ class ReflectionViewController: UIViewController, UINavigationControllerDelegate
             
         }
     }
+    
+    // Save
+    
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        if isExisting == false {
+            let answer1 = question1Label.text
+            let answer2 = question2Label.text
+            let answer3 = question3Label.text
+            let answer4 = question4Label.text
+            
+            if let moc = managedObjectContext {
+                let reflection = Reflection(context: moc)
+            }
+            
+            reflection?.answer1 = answer1
+            reflection?.answer2 = answer2
+            reflection?.answer3 = answer3
+            reflection?.answer4 = answer4
+            
+            saveToCoreData {
+                let isPresentingInAddReflectionMode = self.presentedViewController is UINavigationController
+                
+                if isPresentingInAddReflectionMode {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.navigationController!.popViewController(animated: true)
+                }
+            }
+        } else if isExisting == true {
+            let reflection = self.reflection
+            let managedObject = reflection
+            
+            managedObject?.setValue(question1Label.text, forKey: "answer1")
+            managedObject?.setValue(question2Label.text, forKey: "answer2")
+            managedObject?.setValue(question3Label.text, forKey: "answer3")
+            managedObject?.setValue(question4Label.text, forKey: "answer4")
+            
+            do {
+                try context.save()
+                
+                let isPresentingInnAddReflectionMode = self.presentedViewController is UINavigationController
+                if isPresentingInnAddReflectionMode {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.navigationController!.popViewController(animated: true)
+                }
+            }
+            
+            catch {
+                print("Failed to update existing note.")
+            }
+            
+        }
+        
+    }
+    
+    
+    // Cancel
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        let isPresentingInnAddReflectionMode = presentingViewController is UINavigationController
+        
+        if isPresentingInnAddReflectionMode {
+            dismiss(animated: true, completion: nil)
+        } else {
+            navigationController!.popViewController(animated: true)
+        }
+    }
+    
+    
+    
     
     
 

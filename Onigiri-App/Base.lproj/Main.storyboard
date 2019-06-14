@@ -88,8 +88,16 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Reflektion" id="zFW-9c-qR9">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7pQ-ZR-JQ3"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2Ym-qv-EPt"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7pQ-ZR-JQ3">
+                                            <connections>
+                                                <action selector="cancelButtonTapped:" destination="q5W-8s-HoO" id="exd-lX-XFC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2Ym-qv-EPt">
+                                            <connections>
+                                                <action selector="saveButtonTapped:" destination="q5W-8s-HoO" id="LDl-gu-Dny"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -273,7 +281,6 @@
         <!--Reflektionen-->
         <scene sceneID="CvY-94-kXi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KbI-kW-bCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="epA-pC-gdZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Reflektionen" image="list" selectedImage="list" id="0Xn-EM-GSo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Uo-Tb-lnK">
@@ -284,6 +291,7 @@
                         <segue destination="CZC-0c-Q2e" kind="relationship" relationship="rootViewController" id="5zW-e2-aBy"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbI-kW-bCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-912" y="77"/>
         </scene>
@@ -428,6 +436,9 @@
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="8Js-fe-gK1" kind="relationship" relationship="rootViewController" id="BPe-Bg-VhX"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93z-kH-oiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -499,6 +510,7 @@
         <image name="list" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="26Y-NF-tn3"/>
         <segue reference="lEq-bL-wCn"/>
     </inferredMetricsTieBreakers>
 </document>

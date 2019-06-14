@@ -50,5 +50,44 @@ class ReflectionListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.deleteRows(at: <#T##[IndexPath]#>, with: .fade)
+        }
+        tableView.reloadData()
+    }
+    
+    
+    func retriveReflections() {
+        managedObjectContext?.perform {
+           
+            self.fetchReflectionsFromCoreData { (reflections) in
+                if let reflections = reflections {
+                    self.reflections = reflections
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    func fetchReflectionsFromCoreData(completion: @escaping([Reflection]?) -> Void) {
+        managedObjectContext?.perform {
+            var reflections = [Reflection]()
+            let request: NSFetchRequest<Reflection> = Reflection.fetchRequest()
+            
+            do {
+                reflections = try self.managedObjectContext!.fetch(request)
+                completion(reflections)
+            }
+            
+            catch {
+                print("Could not reflections from CoreData: \(error.localizedDescription)")
+            }
+        
+        }
+    }
+    
 
+    
 }

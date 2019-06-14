@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ReflectionViewController: UIViewController {
     
@@ -19,6 +20,19 @@ class ReflectionViewController: UIViewController {
     var answer2: String?
     var answer3: String?
     var answer4: String?
+    
+    
+    var managedObjectContext: NSManagedObjectContext? {
+        return(UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    }
+    
+    var reflectionFetchedResultsController: NSFetchedResultsController<Reflection>!
+    var reflections = [Reflection]()
+    var reflection: Reflection?
+    var isExisting = false
+    var indexPath: Int?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

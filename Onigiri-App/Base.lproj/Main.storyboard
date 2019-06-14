@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-si-HO2">
-                                <rect key="frame" x="0.0" y="20" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="AS3-ao-ksF"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notiere deine Reflexion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-v3-qLY">
-                                <rect key="frame" x="20" y="290" width="374" height="200"/>
+                                <rect key="frame" x="20" y="334" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="BcE-aW-BCI"/>
                                 </constraints>
@@ -47,8 +47,7 @@
                                         <rect key="frame" x="174" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Weiter"/>
                                         <connections>
-                                            <action selector="weiterTapped:" destination="7jj-9M-JeJ" eventType="touchUpInside" id="ndb-CB-sYI"/>
-                                            <segue destination="q5W-8s-HoO" kind="show" identifier="Question4ToReflection" id="1Vs-Ws-LXK"/>
+                                            <segue destination="q5W-8s-HoO" kind="show" id="a2V-xz-IWP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -102,28 +101,28 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="SLw-e0-fYf">
-                                <rect key="frame" x="20" y="128" width="374" height="539"/>
+                                <rect key="frame" x="20" y="128" width="374" height="588"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERw-2h-7C5">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="88.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n27-fn-0jm">
-                                        <rect key="frame" x="0.0" y="154.33333333333331" width="374" height="76.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="166.66666666666669" width="374" height="88.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.1048414795" green="1" blue="0.00074388167699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-SV-sea">
-                                        <rect key="frame" x="0.0" y="308.66666666666669" width="374" height="76"/>
+                                        <rect key="frame" x="0.0" y="333" width="374" height="88.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="1" green="0.96679415639999999" blue="0.68622944620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3a-WH-6oj">
-                                        <rect key="frame" x="0.0" y="462.66666666666663" width="374" height="76.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="499.66666666666657" width="374" height="88.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="1" green="0.4636136105" blue="0.53186872839999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -164,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage 3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7w-g0-xsM">
-                                <rect key="frame" x="0.0" y="20" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="KMV-jw-so1"/>
                                 </constraints>
@@ -173,7 +172,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notiere deine Reflexion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drf-ch-y6l">
-                                <rect key="frame" x="20" y="290" width="374" height="200"/>
+                                <rect key="frame" x="20" y="334" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="u9K-co-e6r"/>
                                 </constraints>
@@ -192,8 +191,7 @@
                                         <rect key="frame" x="174" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Weiter"/>
                                         <connections>
-                                            <action selector="weiterTapped:" destination="gRG-QS-xav" eventType="touchUpInside" id="MWv-Qm-CZB"/>
-                                            <segue destination="7jj-9M-JeJ" kind="show" identifier="Question3ToQuestion4" id="QxP-fb-jfO"/>
+                                            <segue destination="7jj-9M-JeJ" kind="show" identifier="Question3ToQuestion4" id="Ilt-eC-Y24"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -269,7 +267,7 @@
                     <navigationItem key="navigationItem" title="Meine Reflektionen" id="F5e-f3-f4M">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rc0-fh-GwM">
                             <connections>
-                                <segue destination="8Js-fe-gK1" kind="presentation" id="26Y-NF-tn3"/>
+                                <segue destination="Pi4-r1-ekB" kind="presentation" id="6mQ-6J-8AE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -304,7 +302,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-tV-Cma">
-                                <rect key="frame" x="0.0" y="20" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Ofm-7p-Pij"/>
                                 </constraints>
@@ -313,7 +311,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notiere deine Reflexion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9NE-fi-3XG">
-                                <rect key="frame" x="20" y="290" width="374" height="200"/>
+                                <rect key="frame" x="20" y="334" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="zM1-Zi-Zmq"/>
                                 </constraints>
@@ -332,8 +330,7 @@
                                         <rect key="frame" x="174" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Weiter"/>
                                         <connections>
-                                            <action selector="weiterTapped:" destination="FvQ-Xc-Zvo" eventType="touchUpInside" id="rRh-Uu-VcD"/>
-                                            <segue destination="gRG-QS-xav" kind="show" identifier="Question2ToQuestion3" id="3PG-FK-CHB"/>
+                                            <segue destination="gRG-QS-xav" kind="show" identifier="Question2ToQuestion3" id="FAP-jV-m6u"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -370,7 +367,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frage 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xha-Yh-vfv">
-                                <rect key="frame" x="0.0" y="20" width="414" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="GR8-II-vrH"/>
                                 </constraints>
@@ -379,7 +376,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notiere deine Reflexion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-Un-97Z">
-                                <rect key="frame" x="20" y="290" width="374" height="200"/>
+                                <rect key="frame" x="20" y="334" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="vxq-Vj-1Gz"/>
                                 </constraints>
@@ -398,8 +395,7 @@
                                         <rect key="frame" x="174" y="0.0" width="160" height="30"/>
                                         <state key="normal" title="Weiter"/>
                                         <connections>
-                                            <action selector="weiterTapped:" destination="8Js-fe-gK1" eventType="touchUpInside" id="OY8-FM-qf4"/>
-                                            <segue destination="FvQ-Xc-Zvo" kind="show" identifier="Question1ToQuestion2" id="k7n-4P-h5U"/>
+                                            <segue destination="FvQ-Xc-Zvo" kind="show" identifier="Question1ToQuestion2" id="YLQ-kt-Km0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -442,7 +438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93z-kH-oiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1591" y="893"/>
+            <point key="canvasLocation" x="-1386" y="893"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="J0g-1S-YfD">
@@ -510,7 +506,6 @@
         <image name="list" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="26Y-NF-tn3"/>
-        <segue reference="lEq-bL-wCn"/>
+        <segue reference="a2V-xz-IWP"/>
     </inferredMetricsTieBreakers>
 </document>

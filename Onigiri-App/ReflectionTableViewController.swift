@@ -15,6 +15,13 @@ class ReflectionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let savedReflections = Reflection.loadReflections() {
+            reflections = savedReflections
+        } else {
+            reflections = Reflection.loadSampleReflections()!
+        }
+        
         // self.clearsSelectionOnViewWillAppear = false
 
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -33,8 +40,8 @@ class ReflectionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReflectionCellIdentifier", for: indexPath)
         let reflection = reflections[indexPath.row]
-        cell.detailTextLabel?.text = reflection.answer1
-
+        cell.textLabel?.text = reflection.answer1
+        
         return cell
     }
 

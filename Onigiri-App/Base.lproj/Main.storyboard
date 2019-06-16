@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fUk-hh-M5Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,11 +102,62 @@
                             <outlet property="delegate" destination="jq2-Np-zi0" id="p2w-kT-kxF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Meine Reflektionen" id="cqk-eA-oVr"/>
+                    <navigationItem key="navigationItem" title="Meine Reflektionen" id="cqk-eA-oVr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8nQ-3e-iW1">
+                            <connections>
+                                <segue destination="PyA-Vz-1ft" kind="presentation" id="yG2-jb-fQh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0w-3J-zfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="388" y="-54"/>
+        </scene>
+        <!--Neue Reflektion-->
+        <scene sceneID="3c6-DY-IxG">
+            <objects>
+                <tableViewController title="Neue Reflektion" id="QpT-2V-4x4" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mvf-5G-Hak">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u60-iT-q46">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u60-iT-q46" id="MEY-WC-64n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QpT-2V-4x4" id="bo4-70-IUs"/>
+                            <outlet property="delegate" destination="QpT-2V-4x4" id="Dbp-K5-LOy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Neue Reflektion" largeTitleDisplayMode="never" id="5bv-5P-RKT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlI-4F-50X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="693"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Reb-4J-3bh">
+            <objects>
+                <navigationController id="PyA-Vz-1ft" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RKM-7L-ZCh">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QpT-2V-4x4" kind="relationship" relationship="rootViewController" id="wpD-c0-ZFv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4d-g2-1zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="693"/>
         </scene>
         <!--Reflektionsliste-->
         <scene sceneID="fPg-5R-k1P">

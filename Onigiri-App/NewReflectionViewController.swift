@@ -1,5 +1,5 @@
 //
-//  ReflectionTableViewController.swift
+//  NewReflectionViewController.swift
 //  Onigiri-App
 //
 //  Created by Vale-chan on 16.06.19.
@@ -8,75 +8,59 @@
 
 import UIKit
 
-class ReflectionTableViewController: UITableViewController {
-    
-    @IBAction func unwindToReflectionList(segue: UIStoryboardSegue) {
-        /*
-        guard segue.identifier == "saveUnwind" else { return }
-        let sourceViewController = segue.source as! NewReflectionViewController
-        
-        if let reflection = sourceViewController.reflection {
-            if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                reflections[selectedIndexPath.row] = reflection
-                tableView.reloadRows(at: [selectedIndexPath], with: .none)
-            } else {
-                let newIndexPath = IndexPath(row: reflections.count, section: 0)
-                reflections.append(reflection)
-                tableView.insertRows(at: [newIndexPath], with: .automatic)
-            }
-        }
-        Reflection.saveReflections(reflections)
- */
-    }
-    
-    var reflections = [Reflection]()
-    
+class NewReflectionViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let savedReflections = Reflection.loadReflections() {
-            reflections = savedReflections
-        } else {
-            reflections = Reflection.loadSampleReflections()!
-        }
-        
+
+        // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return reflections.count
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReflectionCellIdentifier", for: indexPath)
-        let reflection = reflections[indexPath.row]
-        cell.textLabel?.text = reflection.answer1
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
         return true
     }
+    */
 
+    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            reflections.remove(at: indexPath.row)
+            // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
-            Reflection.saveReflections(reflections)
-        }
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
     }
+    */
 
     /*
     // Override to support rearranging the table view.

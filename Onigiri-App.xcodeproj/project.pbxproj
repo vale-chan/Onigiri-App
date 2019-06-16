@@ -11,6 +11,8 @@
 		0256506022B0EB4700D4AD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256505E22B0EB4700D4AD65 /* Main.storyboard */; };
 		0256506222B0EB4800D4AD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0256506122B0EB4800D4AD65 /* Assets.xcassets */; };
 		0256506522B0EB4800D4AD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */; };
+		0286764022B6089A000665E0 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286763F22B6089A000665E0 /* Reflection.swift */; };
+		0286764222B609C6000665E0 /* ReflectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0286764122B609C6000665E0 /* ReflectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0256506122B0EB4800D4AD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0256506422B0EB4800D4AD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0256506622B0EB4800D4AD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0286763F22B6089A000665E0 /* Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
+		0286764122B609C6000665E0 /* ReflectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				0256505A22B0EB4700D4AD65 /* AppDelegate.swift */,
 				0256505E22B0EB4700D4AD65 /* Main.storyboard */,
+				0286763F22B6089A000665E0 /* Reflection.swift */,
+				0286764122B609C6000665E0 /* ReflectionTableViewController.swift */,
 				0256506122B0EB4800D4AD65 /* Assets.xcassets */,
 				0256506322B0EB4800D4AD65 /* LaunchScreen.storyboard */,
 				0256506622B0EB4800D4AD65 /* Info.plist */,
@@ -132,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0286764022B6089A000665E0 /* Reflection.swift in Sources */,
+				0286764222B609C6000665E0 /* ReflectionTableViewController.swift in Sources */,
 				0256505B22B0EB4700D4AD65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
